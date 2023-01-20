@@ -7,13 +7,15 @@ export function Tile ({imageSrc, body, title, instagramLink, externalSite, dates
 
     return (
         <div className="tile">
-            <img src={imageSrc} alt={title} className="main-tile-image"/>
-            <div className='information-text-container'>
-                <div className='left'>
-                    <p className='title-text'>{title}</p>
-                    {dates && <p>{dates}</p>}
+            <div onClick={() => setExpanded(!expanded)}>
+                <img src={imageSrc} alt={title} className="main-tile-image"/>
+                <div className='information-text-container'>
+                    <div className='left'>
+                        <p className='title-text'>{title}</p>
+                        {dates && <p>{dates}</p>}
+                    </div>
+                    <span className='expand-button' data-expanded={expanded}>{'>'}</span>
                 </div>
-                <span className='expand-button' data-expanded={expanded} onClick={() => setExpanded(!expanded)}>{'>'}</span>
             </div>
             {
                 expanded &&

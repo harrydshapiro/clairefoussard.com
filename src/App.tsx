@@ -33,45 +33,12 @@ function App() {
   }, [setScrollData, scrollData, scrollHandler])
 
   useEffect(() => {
-    const sectionBoundaries = {
-      projects: {
-          top: projectSectionRef.current!.offsetTop,
-          bottom: projectSectionRef.current!.offsetTop + projectSectionRef.current!.offsetHeight
-      },
-      artists: {
-          top: artistsSectionRef.current!.offsetTop,
-          bottom: artistsSectionRef.current!.offsetTop + artistsSectionRef.current!.offsetHeight
-      },
-      about: {
-          top: aboutSectionRef.current!.offsetTop,
-          bottom: aboutSectionRef.current!.offsetTop + aboutSectionRef.current!.offsetHeight
-      }
-    }
-
-    if (scrollData.direction === 'down') {
-        if (scrollData.scrollY + window.innerHeight > sectionBoundaries.about.top!) {
-            setCurrentSection('about')
-        } else if (scrollData.scrollY + window.innerHeight > sectionBoundaries.artists.top!) {
-            setCurrentSection('artists')
-        } else {
-            setCurrentSection('projects')
-        }
-    } else if (scrollData.direction === 'up') {
-        if (scrollData.scrollY < sectionBoundaries.projects.bottom!) {
-            setCurrentSection('projects')
-        } else if (scrollData.scrollY < sectionBoundaries.artists.bottom!) {
-            setCurrentSection('artists')
-        } else {
-            setCurrentSection('about')
-        }
+    if (scrollData.scrollY > aboutSectionRef.current!.offsetTop - (window.innerHeight / 3)) {
+      setCurrentSection('about')
+    } else if (scrollData.scrollY > artistsSectionRef.current!.offsetTop - (window.innerHeight / 3)) {
+      setCurrentSection('artists')
     } else {
-      if (scrollData.scrollY > (sectionBoundaries.artists.bottom - (window.innerHeight / 2))) {
-        setCurrentSection('about')
-      } else if (scrollData.scrollY > (sectionBoundaries.projects.bottom - (window.innerHeight / 2))) {
-        setCurrentSection('artists')
-      } else {
-        setCurrentSection('projects')
-      }
+      setCurrentSection('projects')
     }
   }, [scrollData])
 
