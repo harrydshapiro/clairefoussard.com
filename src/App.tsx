@@ -33,7 +33,6 @@ function App() {
   }, [setScrollData, scrollData, scrollHandler])
 
   useEffect(() => {
-    debugger
     const sectionBoundaries = {
       projects: {
           top: projectSectionRef.current!.offsetTop,
