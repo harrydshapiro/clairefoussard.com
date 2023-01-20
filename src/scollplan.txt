@@ -1,0 +1,8 @@
+if you're scrolling to the bottom, the second the next area comes into view, you should highlight that section
+
+if you're scrolling to the top, the second the previous area comes into view, you should highlight that direction
+
+so we need to know:
+- when are you scrolling
+- what direction are you scrolling
+- given those directions, what are the exact scroll heights at which you trigger a new section change
