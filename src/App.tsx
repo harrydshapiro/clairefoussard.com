@@ -30,7 +30,7 @@ function App() {
       window.addEventListener('scroll', scrollHandler)
 
       return () => window.removeEventListener('scroll', scrollHandler)
-  }, [setScrollData, scrollData])
+  }, [setScrollData, scrollData, scrollHandler])
 
   useEffect(() => {
     debugger

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React from 'react'
 import './index.css'
 
 export function Nav ({ currentSection }: {currentSection?: 'about' | 'projects' | 'artists'}): JSX.Element {
