@@ -32,9 +32,8 @@ function App() {
       return () => window.removeEventListener('scroll', scrollHandler)
   }, [setScrollData, scrollData])
 
-  useLayoutEffect(() => scrollHandler(), [])
-
   useEffect(() => {
+    debugger
     const sectionBoundaries = {
       projects: {
           top: projectSectionRef.current!.offsetTop,
@@ -66,6 +65,14 @@ function App() {
         } else {
             setCurrentSection('about')
         }
+    } else {
+      if (scrollData.scrollY > (sectionBoundaries.artists.bottom - (window.innerHeight / 2))) {
+        setCurrentSection('about')
+      } else if (scrollData.scrollY > (sectionBoundaries.projects.bottom - (window.innerHeight / 2))) {
+        setCurrentSection('artists')
+      } else {
+        setCurrentSection('projects')
+      }
     }
   }, [scrollData])
 
