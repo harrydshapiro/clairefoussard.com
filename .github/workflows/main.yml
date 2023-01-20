@@ -50,3 +50,6 @@ jobs:
       - name: Deploy static site to root S3 bucket
         run: aws s3 sync . s3://clairefoussard.com --delete
         working-directory: react-github-actions-build
+      - name: Deploy static site to root S3 bucket
+        run: aws s3 sync . s3://www.clairefoussard.com --delete
+        working-directory: react-github-actions-build
