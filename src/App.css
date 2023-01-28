@@ -19,7 +19,7 @@ p {
 
 .App {
   padding-top: 20px;
-  cursor: url('../public/yoko.png'), auto;
+  cursor: pointer;
 }
 
 .section-wrapper {
