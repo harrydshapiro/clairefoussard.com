@@ -8,13 +8,18 @@ body {
   margin: auto;
   font-size: 15px;
   letter-spacing: -0.4px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "ActiveGrotesk", "FormaDJR", Helvetica, Arial, sans-serif;
   text-align: center;
   padding: 0 0 50px;
 }
 
 p {
   margin: 0;
+}
+
+.App {
+  padding-top: 20px;
+  cursor: url('../public/yoko.png'), auto;
 }
 
 .section-wrapper {

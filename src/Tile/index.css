@@ -26,10 +26,6 @@
     margin-top: 10px;
 }
 
-.expand-button {
-    /* transition: 0.25s; */
-}
-
 .expand-button[data-expanded="true"] {
     rotate: 90deg;
 }

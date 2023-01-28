@@ -14,7 +14,7 @@ export function Tile ({imageSrc, body, title, instagramLink, externalSite, dates
                         <p className='title-text'>{title}</p>
                         {dates && <p>{dates}</p>}
                     </div>
-                    <span className='expand-button' data-expanded={expanded}>{'>'}</span>
+                    <img src="arrow.svg" alt="expand-caret" className='expand-button' data-expanded={expanded}/>
                 </div>
             </div>
             {
