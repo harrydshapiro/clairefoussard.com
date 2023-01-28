@@ -19,7 +19,7 @@ p {
 
 .App {
   padding-top: 20px;
-  cursor: pointer;
+  cursor: auto;
 }
 
 .section-wrapper {
