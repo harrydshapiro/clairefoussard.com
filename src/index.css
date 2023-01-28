@@ -14,11 +14,6 @@ code {
 }
 
 @font-face {
-  font-family: 'FormaDJR';
-  src: url('../public/FormaDJR.woff2');
-}
-
-@font-face {
   font-family: 'ActiveGrotesk';
   src: url('../public/AktivGrotesk.woff2');
 }
