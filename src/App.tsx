@@ -62,7 +62,7 @@ function App() {
         <br/>
         <br/>
         <p>let's chat</p>
-        <a href="mailto:me@clairefoussard.com">me@clairefoussard.com</a>
+        me@clairefoussard.com
       </div>
     </div>
   );
