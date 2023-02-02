@@ -23,7 +23,7 @@ p {
 }
 
 .section-wrapper {
-  padding: 0 5px;
+  padding: 0 7px;
   box-sizing: border-box;
   /* margin-bottom: 80px; */
 }
@@ -35,4 +35,8 @@ p {
 #section-about #claire-headshot {
   width: 100%;
   margin-bottom: 20px;
+}
+
+#section-about .bio-text {
+  text-align: left;
 }

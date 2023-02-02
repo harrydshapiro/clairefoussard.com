@@ -8,7 +8,7 @@ export function Tile ({imageSrc, body, title, instagramLink, externalSite, dates
     return (
         <div className="tile">
             <div onClick={() => setExpanded(!expanded)}>
-                <img src={imageSrc} alt={title} className="main-tile-image"/>
+                <img src={imageSrc} alt="" className="main-tile-image"/>
                 <div className='information-text-container'>
                     <div className='left'>
                         <p className='title-text'>{title}</p>

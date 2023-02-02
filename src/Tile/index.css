@@ -26,6 +26,10 @@
     margin-top: 10px;
 }
 
+.expand-button {
+    transform: translateX(6px)
+}
+
 .expand-button[data-expanded="true"] {
     rotate: 90deg;
 }

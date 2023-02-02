@@ -56,9 +56,9 @@ function App() {
       
       <div className="section-wrapper" id="section-about" ref={aboutSectionRef}>
         <img src="./claire_foussard.webp" alt="claire foussard headshot" id="claire-headshot"/>
-        <p>I asked Harry to make me a website. Typically my biography would go here, but Harry doesn’t know what that would be. So instead, here’s some filler text. It could be anything!</p>
-        <br/>
-        <p>I went to Columbus Park West Nursery School, and received my Bachelors from Harvard University. I went to Sotheby’s and vaped in the bathroom when I got sad during online classes.</p>
+        <p className="bio-text">
+        Claire Foussard is a New York City based curator, writer, and one of the United States’ foremost experts on contemporary Inuit art. In her three years as the director of a small gallery with locations in Harlem and the East Village, Foussard collaborated with dozens of emerging artists to share their multimedia exhibitions and publications with NYC's next generation of art collectors. She received bachelor's degrees in art history and anthropology from Colgate University in 2018, and in 2022 she received her MA in Art Business from Sotheby's Institute of Art. She has collaborated with Kinngait Studios and the West Baffin Co-operative since her 2017 research and curatorial residency, and she continues to produce significant scholarship and exhibitions highlighting the ingenuity and resilience of Inuit artists in living and working in the Canadian Arctic since the mid-20th century.
+        </p>
         <br/>
         <br/>
         <p>let's chat</p>
