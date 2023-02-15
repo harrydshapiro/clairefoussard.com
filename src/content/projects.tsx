@@ -20,6 +20,26 @@ export const projects: PageTile[] = [
         )
     },
     {
+        title: <p>Siku Sila<br/>An exhibition of stone sculptures and paper works created by artists from Kinngait, Nunavut.</p>,
+        imageSrc: './IMG_0078.jpg',
+        dates: 'July 9 – August 8, 2021',
+        body: (
+            <>
+                <p>
+                    Siku Sila examines the evolving ways visual art has been used to maintain tradition and share Inuit cultural knowledge with the world since the 1980’s. The exhibition is a two-part installation, named after a traditional Inuit ‘elimination game’ that also pays homage to the Kinngait region known as Sikusiila that existed before Inuit settled into communities. In the game, a line is drawn on the ground, designating one side as ‘Siku’, which translates to ‘ice,’ and the other side as ‘Sila’, meaning ‘outside air’ or ‘weather.’ The collection features scenes from the arctic landscape, as well as the still lifes and vignettes of intimate moments from inside the artists’ homes.
+                    <br/><br/>
+                    Inuk Activist and Curatorial Advisor Oo Aqpik says: “There’s a direct correlation between Siku Sila the game, and what the whole world has endured after spending the past year inside. Now, more than ever, we are feeling the distinction between inte- rior and exterior life. This exhibition, and the talented artists featured, mirror this division with deeply personal depictions of ‘inside’ and ‘outside’ life. Unlike the English language which has a binary use of ‘inside’ and ‘outside’, Inuktitut words carry descriptive information for safe passages. In exploring this collection, viewers will reconsider their relationship to the environment.” 
+                    <br/><br/>
+                    The frst part of the exhibition is a selection of recent works by contemporary Inuit artists including Ooloosie Saila, Nicotye Samayualie, Padloo Samayualie, Ningeosiaq Ashoona, Pitseolak Qimirpik, Palaya Qiatsuq, and Shuvinai Ashoona. The second installment features a selection of prints and drawings dating back to the 1980’s by celebrated artists including Pudlo Pudlat, Napachie Pootoogook, Oshutsiak (Oshoochiak) Pudlat, Itee Pootoogook, and Jutai Toonoo, as well as the works of master carvers Pootoogook Jaw and Jamasie Pitseolak.
+                    <br/><br/>
+                    The founding of West Bafn Eskimo Cooperative has transformed artistic production for the Kinngait community of about 1,400 people. For Siku Sila, Aqpik and Foussard curated the works of artists who currently live and create in Kinngait today or have throughout their lifetime, in context of their own community and tradition. Highlights include paper drawings with colored pencil, graphite and ink from Ooloosie Saila, art industry rising star and master of her discipline, an array of prints by Shuvinai Ashoona, featuring characteristic lithographic and etchings inspired by her graphic drawings, paper works by Napachie Pootoogook depict- ing personal, interior moments from her life lived in a legacy art family, and the pensive and humorous drawings of Jutai Toonoo, which were catalytic for Kinngait’s artistic community.
+                </p>
+                <img src="./IMG_0094.jpg" alt="" className="body-image"></img>
+                <img src="./IMG_0075.jpg" alt="" className="body-image"></img>
+            </>
+        )
+    },
+    {
         title: <p>Sei Smith: Portraits of You</p>,
         imageSrc: './IMG_2249.jpg.JPG',
         dates: 'Sep 19 - Oct 17, 2021',
