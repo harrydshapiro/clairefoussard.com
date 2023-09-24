@@ -1,5 +1,6 @@
 import styles from './App.module.scss'
 import clsx from "clsx"
+import { Image } from "./Atoms/Image"
 
 function App() {
   const indent = new Array(8).fill(<>&nbsp;</>)
@@ -12,10 +13,10 @@ function App() {
 
     <div id={styles.aboutSection}>
       <div className={styles.headshotContainer}>
-        <img src="./headshot.jpg"/>
+        <Image src="./headshot.jpg"/>
       </div>
       <div className={clsx(styles.textStyle_body, styles.bodyTextContainer)}>
-        <p className={styles.bioText}>Claire Foussard is a New York City based curator, writer, and one of the United States' foremost advocates for contemporary Inuit art. In her three years as the director of a small gallery with locations in Harlem and the East Village, Foussard collaborated with dozens of emerging artists to share their multimedia exhibitions and publications with NYC's next generation of art collectors. She received bachelor's degrees in art history and anthropology from Colgate University in 2018, and in 2022 she received her MA in Art Business from Sotheby's Institute of Art. She has collaborated with Kinngait Studios and the West Baffin Co-operative since her 2017 research and curatorial residency, and she continues to produce significant scholarship and exhibitions highlighting the ingenuity and resilience of Inuit artists in living and working in the Canadian Arctic since the mid-20th century.</p>
+        <p className={styles.bioText}>Claire Foussard is a New York City based curator, writer, and one of the United States' foremost advocates for contemporary Inuit art. In her three years as the director of a small gallery with locations in Harlem and the East Village, Foussard collaborated with dozens of emerging artists to share their multimedia exhibitions and publications with NYC's next generation of art collectors. She holds a dual bachelor degree in art history and anthropology from Colgate University, and an MA in Art Business from Sotheby's Institute of Art. She has collaborated with Kinngait Studios and the West Baffin Co-operative since her 2017 research and curatorial residency, and she continues to produce significant scholarship and exhibitions highlighting the ingenuity and resilience of Inuit artists in living and working in the Canadian Arctic since the mid-20th century.</p>
         <a href="mailto:thatgirl@clairefousssard.com" target="_blank">thatgirl@clairefoussard.com</a>
       </div>
     </div>
@@ -28,10 +29,10 @@ function App() {
         <div className={clsx(styles.textStyle_h2, styles.subTitle)}>Canadian Pavilion at the Gwangju Biennale<br/><br/>LeeKangHa Art Museum<br/><br/>April 7 - July 9, 2023</div>
       </div>
       <div className={styles.imagesContainer}>
-        <img src="./once-a-myth/1.png"/>
-        <img src="./once-a-myth/2.png"/>
-        <img src="./once-a-myth/3.png"/>
-        <img src="./once-a-myth/4.png"/>
+        <Image src="./once-a-myth/1.png" />
+        <Image src="./once-a-myth/2.png" />
+        <Image src="./once-a-myth/3.png" />
+        <Image src="./once-a-myth/4.png" />
       </div>
       <div className={clsx(styles.textStyle_body, styles.bodyTextContainer)}>
         <p>
@@ -69,12 +70,12 @@ function App() {
       </div>
       <div className={styles.imagesContainer}>
         <div className={styles.portrait}>
-          <img src="./just-being-us/3.png"></img>
-          <img src="./just-being-us/4.png"></img>
+          <Image src="./just-being-us/3.png"/>
+          <Image src="./just-being-us/4.png"/>
         </div>
         <div className={styles.landscape}>
-          <img src="./just-being-us/1.png"></img>
-          <img src="./just-being-us/2.png"></img>
+          <Image src="./just-being-us/1.png"/>
+          <Image src="./just-being-us/2.png"/>
         </div>
       </div>
       <div className={clsx(styles.textStyle_body, styles.bodyTextContainer)}>
@@ -94,13 +95,13 @@ function App() {
       </div>
       <div className={styles.imagesContainer}>
         <div className={styles.portrait}>
-          <img src="./siku-sila/3.png"></img>
-          <img src="./siku-sila/2.png"></img>
+          <Image src="./siku-sila/3.png"/>
+          <Image src="./siku-sila/2.png"/>
         </div>
         <div className={styles.landscape}>
-          <img src="./siku-sila/1.png"></img>
-          <img src="./siku-sila/4.png"></img>
-          <img src="./siku-sila/5.png"></img>
+          <Image src="./siku-sila/1.png"/>
+          <Image src="./siku-sila/4.png"/>
+          <Image src="./siku-sila/5.png"/>
         </div>
       </div>
       <div className={clsx(styles.textStyle_body, styles.bodyTextContainer)}>
@@ -124,10 +125,10 @@ function App() {
       </div>
       <div className={styles.imagesContainer}>
         <div className={styles.landscape}>
-          <img src="./portraits-of-you/2.png"/>
+          <Image src="./portraits-of-you/2.png"/>
         </div>
         <div className={styles.portrait}>
-          <img src="./portraits-of-you/1.png"/>
+          <Image src="./portraits-of-you/1.png"/>
         </div>
       </div>
       <div className={clsx(styles.textStyle_body, styles.bodyTextContainer)}>
