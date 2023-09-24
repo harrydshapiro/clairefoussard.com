@@ -89,6 +89,7 @@ function App() {
     <div className={styles.project} data-project-id="siku-sila">
       <div className={styles.headerContainer}>
         <div className={clsx(styles.textStyle_h1, styles.title)}>Siku Sila</div>
+        <br/>
         <div className={clsx(styles.textStyle_h2, styles.subTitle)}>An exhibition of stone sculptures and paper works created by artists from Kinngait, Nunavut.</div>
       </div>
       <div className={styles.imagesContainer}>
@@ -118,6 +119,7 @@ function App() {
     <div className={styles.project} data-project-id="portraits-of-you">
       <div className={styles.headerContainer}>
         <div className={clsx(styles.textStyle_h1, styles.title)}>Sei Smith: Portraits of you</div>
+        <br/>
         <div className={clsx(styles.textStyle_h2, styles.subTitle)}>Sep 19 - Oct 17, 2021</div>
       </div>
       <div className={styles.imagesContainer}>
