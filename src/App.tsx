@@ -8,7 +8,7 @@ function App() {
   return <div id={styles.mainPage}>
     <div id={styles.pageHeader}>
       <p className={clsx(styles.textStyle_h1, styles.name)}>CLAIRE FOUSSARD</p>
-      <p className={clsx(styles.textStyle_h2, styles.jobTitle)}>CURATOR AND GALLERIST</p>
+      <p className={clsx(styles.textStyle_h2, styles.jobTitle)}>INDEPENDENT CURATOR</p>
     </div>
 
     <div id={styles.aboutSection}>
