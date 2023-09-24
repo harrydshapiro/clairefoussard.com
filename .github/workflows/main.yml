@@ -19,9 +19,9 @@ jobs:
         with:
           node-version: 12.x
       - name: Install dependencies
-        run: npm install    
+        run: yarn install    
       - name: Generate build
-        run: npm run build
+        run: yarn run build
       # Share artifact inside workflow
       - name: Share artifact inside workflow
         uses: actions/upload-artifact@v1
