@@ -1,0 +1,475 @@
+@font-face {
+    font-family: "Futura";
+    src: url("./font-2.otf");
+}
+@font-face {
+    font-family: "Domaine";
+    src: url("./font-1.otf");
+}
+@font-face {
+    font-family: "Domaine";
+    src: url("./font-1-italic.otf");
+    font-style: italic;
+}
+
+#mainPage {
+    font-family: "Domaine";
+    height: fit-content;
+    max-width: 1900px;
+    margin: auto;
+}
+
+p {
+    margin: unset;
+}
+
+a {
+    color: unset;
+}
+
+footer {
+    text-align: right;
+}
+
+#pageHeader, #projectsHeader, footer {
+    font-family: "Futura", "Domaine";    
+}
+
+@media (max-width: 500px)  {
+    // WHOLE-PAGE STYLING
+    #mainPage {
+        padding: 10px;
+    }
+    .textStyle_h1 {
+        font-size: 16px;
+    }
+    .textStyle_h2 {
+        font-size: 13px;
+    }
+    .textStyle_body {
+        font-size: 13px;
+    }
+
+    // REUSED COMPONENTS
+    .project {
+        margin-bottom: 40px;
+
+        .headerContainer {
+            margin-bottom: 15px;
+            .title {
+                margin-bottom: 3px;
+            }
+        }
+        .bodyTextContainer {
+            p {
+                column-count: auto;
+                column-width: 180px;
+            }
+        }
+        .imagesContainer {
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    // SPECIFIC ELEMENTS, TOP-TO-BOTTOM AS IN THE HTML
+    #pageHeader {
+        margin-bottom: 20px;
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 1px;
+        
+        .jobTitle {
+            text-align: right;
+        }
+    }
+
+    #aboutSection {
+        margin-bottom: 40px;
+        
+        .headshotContainer {
+            margin-bottom: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+        .bodyTextContainer {
+            .bioText {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    #projectsHeader {
+        margin-bottom: 20px;
+    }
+
+    .project[data-project-id="just-being-us"] {
+        .imagesContainer {
+            .portrait {
+                display: flex;
+                justify-content: space-between;
+                img {
+                    width: calc(50% - 5px)
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) and (max-width: 900px)  {
+    // WHOLE-PAGE STYLING
+    #mainPage {
+        padding: 30px 20px;
+    }
+    .textStyle_h1 {
+        font-size: 16px;
+    }
+    .textStyle_h2 {
+        font-size: 14px;
+    }
+    .textStyle_body {
+        font-size: 12px;
+    }
+
+    // REUSED COMPONENTS
+    .project {
+        display: grid;
+        grid-column-gap: 10px;
+        grid: auto auto / repeat(2, minmax(0, 50%));
+        margin-bottom: 20px;
+
+        .headerContainer {
+            margin-bottom: 20px;
+            grid-column-start: 1;
+            grid-row-start: 1;
+            
+            .title {
+                margin-bottom: 3px;
+            }
+        }
+        .bodyTextContainer {
+            grid-row-start: 2;
+            grid-column-start: 1;
+            
+            @media (min-width: 700px) {
+                p {
+                    column-count: auto;
+                    column-width: 180px;
+                }
+            }
+        }
+        .imagesContainer {
+            grid-row-start: 2;
+            grid-column-start: 2;
+            
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    // SPECIFIC ELEMENTS, TOP-TO-BOTTOM IN THE HTML
+    #pageHeader {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 30px;
+        width: 100%;
+
+        > p {
+            flex: 1;
+        }
+    }
+
+    #aboutSection {
+        width: 100%;
+        display: grid;
+        grid-template: min-content / repeat(2, minmax(0, 50%));
+        gap: 10px;
+        margin-bottom: 40px;
+
+        .headshotContainer {
+            grid-column-start: 2;
+            grid-row-start: 1;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        p {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            min-width: 50%;
+        }
+    }
+
+    #projectsHeader {
+        margin-bottom: 30px;
+    }
+
+    .project[data-project-id="just-being-us"] {
+        .imagesContainer {
+            img:nth-of-type(3) {
+                margin-right: 10px;    
+            }
+            img:nth-of-type(3),
+            img:nth-of-type(4) {
+                width: calc(50% - 5px);
+            }
+        }
+    }
+
+    .project[data-project-id="portraits-of-you"] {
+        .portrait {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1500px) {
+    // WHOLE-PAGE STYLING
+    #mainPage {
+        padding: 30px 20px;
+    }
+    .textStyle_h1 {
+        font-size: 16px;
+    }
+    .textStyle_h2 {
+        font-size: 14px;
+    }
+    .textStyle_body {
+        font-size: 12px;
+    }
+
+    // REUSED COMPONENTS
+    .project {
+        display: grid;
+        grid-column-gap: 20px;
+        grid: auto auto / repeat(3, minmax(0, 33.33%));
+        margin-bottom: 30px;
+
+        .headerContainer {
+            margin-bottom: 20px;
+            grid-column-start: 1;
+            grid-row-start: 1;
+            
+            .title {
+                margin-bottom: 3px;
+            }
+        }
+        .bodyTextContainer {
+            grid-row-start: 2;
+            grid-column-start: 1;
+            
+            @media (min-width: 700px) {
+                p {
+                    column-count: auto;
+                    column-width: 180px;
+                }
+            }
+        }
+        .imagesContainer {
+            display: grid;
+            grid-row-start: 2;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    // SPECIFIC ELEMENTS, TOP-TO-BOTTOM IN THE HTML
+    #pageHeader {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 30px;
+        width: 100%;
+
+        > p {
+            width: calc(33.33% + 6px);
+        }
+    }
+
+    #aboutSection {
+        width: 100%;
+        display: grid;
+        grid: auto/repeat(3, minmax(0, 33.33%));
+        grid-column-gap: 20px;
+        margin-bottom: 40px;
+
+        .headshotContainer {
+            grid-row-start: 1;
+            grid-column-start: 3;
+            position: relative;
+
+            img {
+                height: 100%;
+                max-width: 100%;
+                position: absolute;
+                right: 0;
+                object-fit: contain;
+                object-position: top;
+            }
+        }
+
+        .bodyTextContainer {
+            grid-row-start: 1;
+            grid-column-start: 2;
+
+            .bioText {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    #projectsHeader { 
+        margin-bottom: 30px;
+    }
+
+    .project[data-project-id="once-a-myth"] .imagesContainer {
+        display: block;
+    }
+
+    .project[data-project-id="just-being-us"],
+    .project[data-project-id="siku-sila"],
+    .project[data-project-id="portraits-of-you"] {
+        .imagesContainer {
+            grid: repeat(2, min-content) / repeat(2, minmax(0, 50%));
+            grid-column-gap: 20px;
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    // WHOLE-PAGE STYLING
+    #mainPage {
+        padding: 30px 20px;
+    }
+    .textStyle_h1 {
+        font-size: 16px;
+    }
+    .textStyle_h2 {
+        font-size: 14px;
+    }
+    .textStyle_body {
+        font-size: 12px;
+    }
+
+    // REUSED COMPONENTS
+    .project {
+        display: grid;
+        grid-column-gap: 20px;
+        grid: auto auto / 33% repeat(4, minmax(0, 16.66666%));
+        margin-bottom: 30px;
+
+        .headerContainer {
+            margin-bottom: 20px;
+            grid-column-start: 1;
+            grid-row-start: 1;
+            
+            .title {
+                margin-bottom: 3px;
+            }
+        }
+        .bodyTextContainer {
+            grid-row-start: 2;
+            grid-column: 1 / span 1;
+            
+            @media (min-width: 700px) {
+                p {
+                    column-count: auto;
+                    column-width: 180px;
+                }
+            }
+        }
+        .imagesContainer {
+            grid-column: 2 / span 4;
+            grid-row-start: 2;
+            display: grid;
+            grid: repeat(2, min-content) / repeat(3, minmax(0, 33%));
+            gap: 20px 20px;
+
+            .landscape {
+                grid-column: 2 / span 2;
+            }
+
+            
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    // SPECIFIC ELEMENTS, TOP-TO-BOTTOM IN THE HTML
+    #pageHeader {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 30px;
+        width: 100%;
+
+        > p {
+            width: calc(33% + 15px);
+        }
+    }
+
+    #aboutSection {
+        width: 100%;
+        display: grid;
+        grid: repeat(2, min-content)/repeat(3, minmax(0, 33.33%));
+        grid-column-gap: 30px;
+        margin-bottom: 30px;
+
+        .headshotContainer {
+            grid-column-start: 3;
+            display: flex;
+
+            img {
+                width: 300px;
+                margin-left: auto;
+            }
+        }
+
+        div {
+            grid-row-start: 1;
+            grid-column-start: 2;
+            display: flex;
+            flex-direction: column;
+
+            a {
+                margin-top: auto;
+            }
+        }
+    }
+
+    #projectsHeader {
+        margin-left: calc(33.33% + 10px);
+        margin-bottom: 30px;
+    }
+
+    .project[data-project-id="once-a-myth"] {
+        .imagesContainer {
+            grid: repeat(2, min-content) / repeat(2, minmax(0, 50%));
+
+            img {
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+    }
+    .project[data-project-id="portraits-of-you"] {
+        .imagesContainer {
+            .landscape {
+                grid-column: 1 / span 2;
+            }
+        }
+    }
+}
