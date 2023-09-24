@@ -53,3 +53,5 @@ jobs:
       - name: Deploy static site to root S3 bucket
         run: aws s3 sync . s3://www.clairefoussard.com --delete
         working-directory: react-github-actions-build
+      - name: Invalidate existing Cloudfront cache
+        run: aws cloudfront create-invalidation --distribution-id E394XXMUVHC22G --paths "/*"
